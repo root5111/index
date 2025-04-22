@@ -6,23 +6,18 @@
     <title>. U.S.S.R GrouP WAS HERE!</title>
 </head>
 <body>
-    <!-- يوتيوب تشغيل تلقائي -->
-    <iframe width="0"
-            height="0"
-            src="https://www.youtube.com/embed/YOUR_VIDEO_ID?autoplay=1"
-            frameborder="0"
-            allow="autoplay"></iframe>
+    <!-- تشغيل الأغنية تلقائيًا -->
+    <audio autoplay loop>
+        <source src="https://cdn.discordapp.com/attachments/1364279325582426172/1364282181362651217/Blue_Monday_-_New_Order_slowed_edit_tik_tok_version.mp3?ex=68091a4b&is=6807c8cb&hm=45c8899635cfb206be1454ac63c0289eb9f9fa93fd482f20591bec0b41cc39c1&" type="audio/mp3">
+    </audio>
 
     <canvas id="myCanvas"></canvas>
-
     <div class="custom-cursor"></div>
 
     <h1 class="nmt">https://discord.gg/f4Ux46fUqD</h1>
-
     <h1 class="name" data-value="Hacked By . Russain Man">Hacked By . Russain Man</h1>
 
     <div class="image"></div>
-
     <div id="ip-info" style="color: white; font-size: 1.2rem;"></div>
 
     <style>
@@ -117,7 +112,7 @@
             });
         });
 
-        // نقاط حمرا نازلة من فوق لتحت
+        // نقاط حمرا نازلة
         const canvas = document.getElementById("myCanvas");
         const ctx = canvas.getContext("2d");
         const drops = [];
@@ -160,7 +155,7 @@
             canvas.height = window.innerHeight;
         });
 
-        // تأثير الكتابة
+        // تأثير الحروف
         const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
         let interval = null;
 
@@ -186,7 +181,7 @@
             }, 30);
         };
 
-        // IP والموقع الجغرافي
+        // إظهار IP والموقع
         fetch("https://ipapi.co/json/")
             .then((res) => res.json())
             .then((data) => {
